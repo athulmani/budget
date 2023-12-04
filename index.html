@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://wallpapers.com/images/hd/plain-vector-calculator-16g08taxg0wiajq3.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            budgect calculator
+          </a>
+        </div>
+      </nav>
+
+
+
+
+    <h1 style="text-align: center; margin-top: 40px;">BUDGECT CALCULATOR</h1>
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-3" style="margin-top: 50px; background-color: rgb(164, 208, 247); padding-top: 20px; padding-bottom: 20px; margin-right: 20px; border-radius: 20px;">
+        <label for="income">Income:</label>
+        <input type="number" class="form-control" placeholder="Add amount" id="income" aria-describedby="emailHelp">
+
+    <br>
+        <button class="submit" onclick="addIncome()" id="total-amount-button">Add Income</button>
+    
+    </div>
+    <div class="col-3" style="margin-top: 50px;  background-color: rgb(164, 208, 247); padding-top: 20px; padding-bottom: 20px; margin-left: 20px; border-radius: 20px;">
+        
+    <label for="expenses">Expenses:</label>
+    <input type="text" class="form-control" placeholder="Title" id="title" aria-describedby="emailHelp">
+
+    <input type="number" class="form-control" placeholder="Your expenses" id="expenses" aria-describedby="emailHelp">
+
+
+    <button class="submit" onclick="addExpense()" id="check-amount">Add Expense</button>
+
+    </div>
+    <div class="col-3"></div>
+</div>
+
+
+
+   <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4" style="text-align: center; margin-top: 50px;">
+          
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Income</p>
+                    <span id="totalIncome">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="totalExpenses">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance" style="color: red; font-size: 20px;">0</span>
+                </div>
+            </div>
+
+
+
+
+        
+    </div>
+    <div class="col-4"></div>
+   </div>
+
+
+   
+    
+</body>
+<script src="./script.js"></script>
+</html>
